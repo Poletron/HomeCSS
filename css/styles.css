@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 
+@import url('https://css.gg/css?=|chevron-left|chevron-right');
+
 
 /*RESET CSS*/
 
@@ -76,7 +78,8 @@ nav > *, nav > ul > li{
 /*HEADER*/
 
 header {
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(../media/bg-header.png);
+    background-image:linear-gradient(rgba(0,0,0,0.0),rgb(44, 29, 0)), url(../media/bg-header.png);
+
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -131,16 +134,19 @@ header h2{
 }
 
 /* Slider */
+.bg-sand{
+    background-image: linear-gradient(rgb(46, 30, 0),rgba(0, 0, 0, 0)), url(../media/bg-sand.jpg);
+}
 
 .flex-container{
     height:650px;
     display: flex;
     width: 80%;
-    margin: 15px auto;
+    margin: 0px auto;
     text-align: center;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 238, 218);
     justify-content: center;
     align-content: center;
 }
@@ -153,6 +159,13 @@ header h2{
     height: min-content;
 }
 
+.flex-container i {
+    padding: 5px 30px 5px 30px;
+}
+
+.gg-chevron-right, .gg-chevron-left{
+    width: 55px !important;
+}
 .box-container{
     width: 500px;
     padding: 25px;
@@ -175,7 +188,7 @@ h4{
     text-align: center;
     font-size: x-large;
     letter-spacing: 3px;
-    color: #3d3d3d;
+    color: #fff4d6;
 }
 
 .grid-container{
